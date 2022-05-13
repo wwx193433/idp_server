@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                 Destination="http://localhost:4502/sites.html/content/saml_login"
+                 ID="_c02332b4cd4acbcd97c52b8985301bca" IssueInstant="2022-05-12T08:04:01.485Z" Version="2.0">
+    <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">TestIDP</saml2:Issuer>
+    <saml2p:Status>
+        <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </saml2p:Status>
+    <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_fd5e6163a10c83f383763dedf5ada811"
+                     IssueInstant="2022-05-12T08:04:01.495Z" Version="2.0">
+        <saml2:Issuer>TestIDP</saml2:Issuer>
+        <saml2:Subject>
+            <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient" NameQualifier="TestSP"
+                          SPNameQualifier="TestSP">TestSP
+            </saml2:NameID>
+            <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                <saml2:SubjectConfirmationData InResponseTo="Made up ID" NotBefore="2022-05-12T08:04:01.499Z"
+                                               NotOnOrAfter="2022-05-12T08:14:01.499Z"
+                                               Recipient="http://localhost:4502/sites.html/content/saml_login"/>
+            </saml2:SubjectConfirmation>
+        </saml2:Subject>
+        <saml2:Conditions NotBefore="2022-05-12T08:04:01.500Z" NotOnOrAfter="2022-05-12T08:14:01.500Z">
+            <saml2:AudienceRestriction>
+                <saml2:Audience>http://localhost:4502/sites.html/content/saml_login</saml2:Audience>
+            </saml2:AudienceRestriction>
+        </saml2:Conditions>
+        <saml2:AttributeStatement>
+            <saml2:Attribute Name="username">
+                <saml2:AttributeValue xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xsd:string">admin
+                </saml2:AttributeValue>
+            </saml2:Attribute>
+        </saml2:AttributeStatement>
+        <saml2:AuthnStatement AuthnInstant="2022-05-12T08:04:01.504Z">
+            <saml2:AuthnContext>
+                <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:Smartcard
+                </saml2:AuthnContextClassRef>
+            </saml2:AuthnContext>
+        </saml2:AuthnStatement>
+    </saml2:Assertion>
+</saml2p:Response>

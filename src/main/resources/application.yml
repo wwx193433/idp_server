@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  thymeleaf:
+    prefix: classpath:/views/
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                    AssertionConsumerServiceURL="http://localhost:8080/webprofile-ref-project/sp/consumer"
+                    Destination="http://localhost:8082/idp/sso/login"
+                    ID="_ff963f4a-45e1-48e4-903a-69c73e19d576"
+                    IssueInstant="2022-05-07T02:28:05Z"
+                    ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Version="2.0">
+    <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">aem-sample-sp</saml:Issuer>
+    <samlp:NameIDPolicy AllowCreate="true" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/>
+</samlp:AuthnRequest>

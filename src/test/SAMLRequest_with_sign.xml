@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<samlp:AuthnRequest xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+                    AssertionConsumerServiceURL="http://localhost:4502/sites.html/content/saml_login"
+                    Destination="http://localhost:8080/idp/singleSignOn" ID="_b778a069-3288-4297-9898-0ec35dcb4bd3"
+                    IssueInstant="2022-05-12T06:27:57Z" ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                    Version="2.0">
+    <saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">TestSP</saml:Issuer>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+            <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+            <Reference URI="#_b778a069-3288-4297-9898-0ec35dcb4bd3">
+                <Transforms>
+                    <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+                    <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                </Transforms>
+                <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                <DigestValue>yg3abtl/Zh02siSqOFqTcVNyiKVdIko9fxZk5xGBGBo=</DigestValue>
+            </Reference>
+        </SignedInfo>
+        <SignatureValue>SkJRxhgIpxluwlEK7SSnLJkXby2lzhUCSQczBxEC7LhyzcCjZQ1CO1tjxJnbKttFBn92L/CYZM65&#13;
+            vAqWIflXsE3G9is3yreBXfoAi6CxNBg6iYavwxhu1HS65q97EZwtBRmgsrgEFe0uYorvvxg4Fal7&#13;
+            BvZA6n4cFB8SttS/UvRd7UTmcVi8H986DInI6PdmuG436MkNkJVWqNP79VyWROZ67rd9JNSqonSp&#13;
+            WSqJOXQAQXfSvbFEMNnVqzw1mRB2uAqeZVzIZBF6OjCicKFhzq1dDdepWl2vWHn5xk6uVsivhMXV&#13;
+            GhUGowFO4WkI9m+qjznprj57h7ItNnJTNyxtwQ==
+        </SignatureValue>
+    </Signature>
+    <samlp:NameIDPolicy AllowCreate="true" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient"/>
+</samlp:AuthnRequest>
